@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="icon_width">30dp</dimen>
+    <dimen name="icon_height">30dp</dimen>
+    <dimen name="toolbar_padding_top">10dp</dimen>
+    <dimen name="burrow_text_icon_width">200dp</dimen>
+    <dimen name="burrow_text_icon_height">200dp</dimen>
+
+    <!-- intro_view_dimens::start-->
+    <dimen name="splash_link_text_size">15sp</dimen>
+    <dimen name="intro_text_size_small">20sp</dimen>
+    <dimen name="intro_text_size_medium">25sp</dimen>
+    <dimen name="intro_burrow_icon_width">150dp</dimen>
+    <dimen name="intro_get_started_size">20sp</dimen>
+    <dimen name="intro_burrow_icon_height">110dp</dimen>
+    <dimen name="intro_get_started_padding">20dp</dimen>
+    <dimen name="intro_get_started_margin_1">35dp</dimen>
+    <dimen name="intro_get_started_margin_2">18dp</dimen>
+    <dimen name="intro_get_view_pager_margin_bottom">100dp</dimen>
+    <dimen name="building_list_item_image_height">200dp</dimen>
+    <!-- intro_view_dimens::end-->
+</resources>

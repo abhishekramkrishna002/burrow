@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Explore"
+            android:textColor="@color/white"
+            android:textSize="@dimen/intro_text_size_medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Relevant text \n explaing tenanat app \n goes here"
+            android:textColor="@color/white"
+            android:textSize="@dimen/intro_text_size_small" />
+    </LinearLayout>
+
+
+    <Button
+        android:padding="@dimen/intro_get_started_padding"
+        android:id="@+id/btGetStarted"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginLeft="@dimen/intro_get_started_margin_1"
+        android:layout_marginRight="@dimen/intro_get_started_margin_1"
+        android:layout_marginBottom="@dimen/intro_get_started_margin_2"
+        android:background="@drawable/get_started_box"
+        android:text="GET STARTED"
+        android:textColor="#fff"
+        android:textSize="@dimen/intro_get_started_size" />
+
+
+</FrameLayout>

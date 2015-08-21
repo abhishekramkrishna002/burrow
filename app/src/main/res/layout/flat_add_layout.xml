@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="40dp"
+    android:paddingBottom="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Flat Name"
+            android:theme="@style/MyEditTextTheme"
+            android:textColorHint="@color/black"
+            android:ems="15" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Flat Floor"
+            android:theme="@style/MyEditTextTheme"
+            android:ems="15" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/flat_type"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:prompt="@string/spinner_prompt_1"
+            android:spinnerMode="dialog"
+            android:theme="@style/MyEditTextTheme"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Cancel"
+            android:id="@+id/cancel"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"
+            android:background="#00796B" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Add Flat"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:background="#00796B" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="icon_width">30dp</dimen>
+    <dimen name="icon_height">30dp</dimen>
+    <dimen name="toolbar_padding_top">10dp</dimen>
+    <dimen name="burrow_text_icon_width">200dp</dimen>
+    <dimen name="burrow_text_icon_height">200dp</dimen>
+
+
+    <dimen name="menu_icon_size">40dp</dimen>
+</resources>
