@@ -77,6 +77,15 @@
         <activity
             android:name=".SearchActivity"
             android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".ExpandableHistoryActivity"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".ExpandableRentActivity"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".ExpandableNotificationsActivity"
+            android:windowSoftInputMode="stateHidden"></activity>
     </application>
 
 </manifest>

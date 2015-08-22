@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Burrow.iml" filepath="$PROJECT_DIR$/Burrow.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/final_burrow.iml" filepath="$PROJECT_DIR$/final_burrow.iml" />
     </modules>
   </component>
 </project>
-
