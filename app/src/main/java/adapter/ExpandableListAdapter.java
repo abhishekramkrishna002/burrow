@@ -8,11 +8,11 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.com.burrow.Child;
-import com.example.com.burrow.Group;
-import com.example.com.burrow.R;
-
 import java.util.ArrayList;
+
+import in.burrow.Child;
+import in.burrow.Group;
+import in.burrow.R;
 
 /**
  * Created by fasal on 26-07-2015.
@@ -84,6 +84,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
         TextView tv = (TextView) convertView.findViewById(R.id.group_name);
         TextView iv = (TextView) convertView.findViewById(R.id.group_number);
         tv.setText(group.getName());
+
         iv.setText(group.getNumber());
         return convertView;
     }

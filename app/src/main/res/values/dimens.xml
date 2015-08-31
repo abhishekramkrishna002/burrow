@@ -9,5 +9,5 @@
     <dimen name="burrow_text_icon_height">200dp</dimen>
 
 
-    <dimen name="menu_icon_size">40dp</dimen>
+    <dimen name="menu_icon_size">100dp</dimen>
 </resources>

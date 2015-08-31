@@ -1,49 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:padding="10dp"
     android:descendantFocusability="beforeDescendants"
-    android:paddingLeft="15dp"
-    android:paddingRight="15dp">
+    android:orientation="horizontal"
+    android:padding="10dp">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="10dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        android:paddingRight="15dp"
-        android:elevation="5dp"
         android:background="@drawable/card_background_selector"
-        >
-    <TextView
-        android:id="@+id/group_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-       android:paddingLeft="5dp"
-        android:textSize="15dp"
-        android:hint="3"
-        android:background="@drawable/group_circle"
-        android:layout_marginLeft="5dp"
+        android:elevation="5dp"
+        android:padding="10dp">
 
-        />
+        <TextView
+            android:id="@+id/group_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/group_circle"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/intro_text_size_medium"
 
-    <TextView
-        android:id="@+id/group_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="25dp"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:textSize="15dp" />
+            />
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:layout_height="wrap_content"
+            android:text="Building 1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/intro_text_size_medium" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/expand" />
     </LinearLayout>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/arrow"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
-        android:layout_alignParentRight="true"
-         />
-</RelativeLayout>
+</LinearLayout>

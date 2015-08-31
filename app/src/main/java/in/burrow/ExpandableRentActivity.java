@@ -4,8 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ExpandableListView;
 
+
 import java.util.ArrayList;
-import android.R;
+
 import adapter.ExpandableListRentAdapter;
 
 

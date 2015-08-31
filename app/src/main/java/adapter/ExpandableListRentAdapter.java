@@ -7,12 +7,13 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.R;
+
 
 import java.util.ArrayList;
 
 import in.burrow.Child;
 import in.burrow.Group;
+import in.burrow.R;
 
 /**
  * Created by fasal on 26-07-2015.

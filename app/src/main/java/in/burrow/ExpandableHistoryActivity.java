@@ -1,31 +1,50 @@
 package in.burrow;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
 import android.widget.ExpandableListView;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 
 import adapter.ExpandableListHistoryAdapter;
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 
 /**
  * Created by fasal on 26-07-2015.
  */
-public class ExpandableHistoryActivity extends Activity {
+public class ExpandableHistoryActivity extends ActionBarActivity {
     private ExpandableListHistoryAdapter ExpAdapter;
     private ArrayList<Group> ExpListItems;
     private ExpandableListView ExpandList;
+    @Bind(R.id.toolbar)
+    Toolbar toolbar;
+    @Bind(R.id.back_icon)
+    ImageButton backButton;
+    @Bind(R.id.home_icon)
+    ImageButton homeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.expandable_main_screen1);
+        ButterKnife.bind(this);
 
         ExpandList = (ExpandableListView) findViewById(R.id.exp_list);
         ExpListItems = SetStandardGroups();
         ExpAdapter = new ExpandableListHistoryAdapter(ExpandableHistoryActivity.this, ExpListItems);
         ExpandList.setAdapter(ExpAdapter);
+        //setSupportActionBar(toolbar);
 
 
     }
@@ -74,6 +93,38 @@ public class ExpandableHistoryActivity extends Activity {
 
         return list;
     }
+
+    @OnClick(R.id.back_icon)
+    public void backButton(View v) {
+        finish();
+    }
+
+    @OnClick(R.id.home_icon)
+    public void homeButton(View v) {
+        // menuConatiner.setVisibility(View.VISIBLE);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main_1, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        super.onOptionsItemSelected(item);
+
+//        switch (item.getItemId()) {
+//            case R.id.action_search:
+//                Intent intent = new Intent(ExpandableHistoryActivity.this, SearchActivity.class);
+//                startActivity(intent);
+//                return true;
+//        }
+        return true;
+    }
+
 
 
 }

@@ -1,57 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?><!--<RelativeLayout--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:paddingTop="4dp"--><!--android:paddingBottom="4dp"--><!--android:layout_marginLeft="50dp">--><!--<LinearLayout--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical"--><!--android:layout_marginLeft="60dp">-->
+
+<!--<TextView--><!--android:id="@+id/history_name"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignBottom="@+id/flag"--><!--android:layout_marginBottom="14dp"--><!--android:layout_marginLeft="35dp"--><!--android:layout_toRightOf="@+id/flag"--><!--android:text="TextView"--><!--android:textSize="15dp"--><!--android:textAppearance="@android:style/TextAppearance.Medium"/>--><!--<TextView--><!--android:id="@+id/country_name1"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignBottom="@+id/flag"--><!--android:layout_marginBottom="14dp"--><!--android:layout_marginLeft="35dp"--><!--android:layout_toRightOf="@+id/flag"--><!--android:text="Water will not be there.."--><!--android:textSize="15dp" />--><!--</LinearLayout>--><!--<ImageView--><!--android:id="@+id/flag"--><!--android:layout_width="70dp"--><!--android:layout_height="50dp"--><!--android:layout_alignParentLeft="true"--><!--android:layout_alignParentTop="true"--><!--android:layout_marginLeft="27dp"--><!--android:src="@drawable/ic_broadcast_black_24dp" />-->
+
+<!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:text="Date"--><!--android:id="@+id/textView8"--><!--android:layout_alignParentTop="true"--><!--android:layout_toRightOf="@+id/flag"--><!--android:layout_toEndOf="@+id/flag"--><!--android:layout_marginLeft="115dp"--><!--android:layout_marginStart="115dp" />-->
+
+<!--</RelativeLayout>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingTop="4dp"
-    android:paddingBottom="4dp"
-    android:layout_marginLeft="50dp">
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="20dp">
+
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginLeft="60dp">
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp">
 
-    <TextView
-        android:id="@+id/history_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/flag"
-        android:layout_marginBottom="14dp"
-        android:layout_marginLeft="35dp"
-        android:layout_toRightOf="@+id/flag"
-        android:text="TextView"
-        android:textSize="15dp"
-        android:textAppearance="@android:style/TextAppearance.Medium"/>
-    <TextView
-        android:id="@+id/country_name1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/flag"
-        android:layout_marginBottom="14dp"
-        android:layout_marginLeft="35dp"
-        android:layout_toRightOf="@+id/flag"
-        android:text="Water will not be there.."
-        android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_broadcast_black_24dp" />
     </LinearLayout>
-    <ImageView
-        android:id="@+id/flag"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="27dp"
-        android:src="@drawable/ic_broadcast_black_24dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Date"
-        android:id="@+id/textView8"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/flag"
-        android:layout_toEndOf="@+id/flag"
-        android:layout_marginLeft="115dp"
-        android:layout_marginStart="115dp" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
 
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Water Alert"
+                android:textColor="@color/black"
+                android:textSize="@dimen/intro_text_size_medium"
+                 />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="June 10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/intro_text_size_small" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="water will not be there from ..."
+            android:textColor="@color/black" />
+    </LinearLayout>
+</LinearLayout>

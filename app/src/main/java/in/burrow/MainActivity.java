@@ -41,6 +41,28 @@ public class MainActivity extends ActionBarActivity {
     @Bind(R.id.toolbar_menu)
     Toolbar menuToolbar;
 
+    @Bind(R.id.profile)
+    LinearLayout profile;
+    @Bind(R.id.notifcation)
+    LinearLayout notifications;
+    @Bind(R.id.sent)
+    LinearLayout sentHistory;
+    @Bind(R.id.rent_overview)
+    LinearLayout rentOverview;
+
+    @OnClick(R.id.sent)
+    public void showSent(View v)
+    {
+        Intent intent=new Intent(MainActivity.this,ExpandableHistoryActivity.class);
+        startActivity(intent);
+    }
+    @OnClick(R.id.notifcation)
+    public void showNotifications(View v)
+    {
+        Intent intent=new Intent(MainActivity.this,ExpandableNotificationsActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

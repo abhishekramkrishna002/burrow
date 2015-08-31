@@ -97,11 +97,11 @@ public class ExpandableListHistoryAdapter extends BaseExpandableListAdapter {
                     .getSystemService(activity.LAYOUT_INFLATER_SERVICE);
             convertView = infalInflater.inflate(R.layout.expandable_child_screen2, null);
         }
-        TextView tv = (TextView) convertView.findViewById(R.id.history_name);
-        ImageView iv = (ImageView) convertView.findViewById(R.id.flag);
-
-        tv.setText(child.getName().toString());
-        iv.setImageResource(child.getImage());
+//        TextView tv = (TextView) convertView.findViewById(R.id.history_name);
+//        ImageView iv = (ImageView) convertView.findViewById(R.id.flag);
+//
+//        tv.setText(child.getName().toString());
+//        iv.setImageResource(child.getImage());
 
         return convertView;
     }

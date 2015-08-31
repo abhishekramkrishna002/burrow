@@ -6,10 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/green"
-    android:elevation="10dp"
+    android:elevation="30dp"
     android:orientation="vertical"
-    android:visibility="gone"
-   >
+    android:visibility="gone">
     <!--android:visibility="gone"-->
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_menu"
@@ -26,78 +25,88 @@
         android:layout_marginTop="10dp">
 
         <LinearLayout
+            android:id="@+id/profile"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
-            <ImageView
+            <Button
                 android:layout_width="@dimen/menu_icon_size"
                 android:layout_height="@dimen/menu_icon_size"
-                android:src="@drawable/ic_face_white_24dp" />
+                android:background="@drawable/menu_profile" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="Profile"
-
                 android:textColor="@color/white" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/notifcation"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
-            <ImageView
+            <Button
                 android:layout_width="@dimen/menu_icon_size"
                 android:layout_height="@dimen/menu_icon_size"
-                android:src="@drawable/ic_notifications_white_24dp" />
+                android:background="@drawable/menu_notification" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:text="Notifications"
                 android:textColor="@color/white" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/sent"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
-            <ImageView
+            <Button
                 android:layout_width="@dimen/menu_icon_size"
                 android:layout_height="@dimen/menu_icon_size"
-                android:src="@drawable/ic_email_black_24dp" />
+                android:background="@drawable/menu_sent" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:text="Sent History"
                 android:textColor="@color/white" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/rent_overview"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
-            <ImageView
+            <Button
                 android:layout_width="@dimen/menu_icon_size"
                 android:layout_height="@dimen/menu_icon_size"
-                android:src="@drawable/ic_rupee_white_24dp" />
+                android:background="@drawable/menu_rent" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:text="Rent Overview"
                 android:textColor="@color/white" />
         </LinearLayout>
